@@ -9,12 +9,15 @@
     <!-- Required jQuery and jQuery UI Javascript references -->
     <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery-ui-1.10.4.min.js")"></script>
+    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Lobster" rel="stylesheet">
+    <script src="~/Scripts/datepicker.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>

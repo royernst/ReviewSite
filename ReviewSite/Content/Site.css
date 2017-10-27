@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Navbar */
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
