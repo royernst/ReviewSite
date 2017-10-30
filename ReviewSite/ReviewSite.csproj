@@ -141,6 +141,10 @@
     <Compile Include="Migrations\201710291604466_Altered character parameters on user input for review creation.Designer.cs">
       <DependentUpon>201710291604466_Altered character parameters on user input for review creation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710300558003_changed content values to 1000 and altered edit to also include new text box.cs" />
+    <Compile Include="Migrations\201710300558003_changed content values to 1000 and altered edit to also include new text box.Designer.cs">
+      <DependentUpon>201710300558003_changed content values to 1000 and altered edit to also include new text box.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
@@ -265,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710291604466_Altered character parameters on user input for review creation.resx">
       <DependentUpon>201710291604466_Altered character parameters on user input for review creation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710300558003_changed content values to 1000 and altered edit to also include new text box.resx">
+      <DependentUpon>201710300558003_changed content values to 1000 and altered edit to also include new text box.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

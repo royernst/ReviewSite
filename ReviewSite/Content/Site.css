@@ -7,6 +7,8 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-color: black;
+    padding-bottom: 15px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -35,15 +37,22 @@ textarea {
     font-size: 30px;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     text-align: center;
+    background-color: #286090;
+    color: white;
+    height: 100px;
+    margin: auto;
+    padding-top: 42.5px;
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 2px;
 }
 
 /* Home View*/
 /* Index */
-
-/* Container Fluid div */
+/* Container-Fluid div at top of Home Index landing page*/
 .homeIndexCF {
     background-image: url('images/technology.jpg');
     background-size: cover;
@@ -51,18 +60,27 @@ footer {
     width: 100%;
 }
 
-/* Jumbotron*/
+/* Jumbotron and related element stylings for background and text */
 .homeIndexJumbotron {
     text-align: center;
     background-color: #000000;
     color: white;
     width: 75%;
     margin: auto;
-    padding-top: 75px;
+    padding-top: 60px;
     border-radius: 0px;
+    font-weight: bolder;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 5px;
 }
 
-/* Description */
+.homeIndexJumbotron h4 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+/* Description text formatting in the main body (lorem ipsum)*/
 .homeIndexDescriptionBackground {
     padding: 0px;
     width: 100%;
@@ -73,18 +91,33 @@ footer {
     color: white;
     margin: 0px;
     width: 100%;
+    font-weight: lighter;
 }
 
 /* Reviews View */
-
 /* Index */
+/* Set background based on container-fluid div */
 .reviewsIndexBackground {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-/* Column div to force full height if tag field is missing */
+/* heading formatting for Index and Details views */
+.reviewsIndexBackground h1,
+.reviewsDetailsBackground h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+/* added custom class to be able to turn specific text white */
+.whiteText {
+    color: white;
+}
+
+/* Column div to force uniform element height if tag field is missing */
 .reviewThumb {
     height: 237px;
 }
@@ -94,3 +127,9 @@ footer {
     text-align: center;
 }
 
+/* Details */
+/* Simple background formatting, similar to above only without text-align */
+.reviewsDetailsBackground {
+    background-color: black;
+    color: white;
+}
