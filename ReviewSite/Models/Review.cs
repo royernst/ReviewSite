@@ -19,13 +19,13 @@ namespace ReviewSite.Models
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
 
-        //MinLength 1 to ensure field is populated.  MaxLength 25 to ensure succinct review titles that grab attention and to
+        //MinLength 1 to ensure field is populated.  MaxLength 50 to ensure succinct review titles that grab attention and to
         //help increase security against javascript injection
-        [MinLength(1), MaxLength(25), Display(Name = "Review Title")]
+        [MinLength(1), MaxLength(50), Display(Name = "Review Title")]
         public string Title { get; set; }
 
         //Quick summary tagline for a title, not required for publication
-        [MaxLength(15), Display(Description = "Max of 15 characters")]
+        [MaxLength(50), Display(Description = "Max of 50 characters")]
         public string Tagline { get; set; }
 
         //Author name -- limited to 20 chars max, min of 2

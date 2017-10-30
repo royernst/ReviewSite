@@ -1,27 +1,31 @@
 ﻿@model IEnumerable<ReviewSite.Models.Review>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Tech Reviews";
 }
+<div class="container-fluid reviewsIndexBackground">
+    <h2>Tech Reviews</h2>
 
-<h2>Index</h2>
+    <p>
+        @*@Html.ActionLink("Create New", "Create")*@
+        @Html.ActionLink("Create New", "Create", new { @class = "btn btn-primary", role = "button" })
+        @*@Html.ActionLink("Create New", "Create", )*@
+    </p>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="#" alt="NO IMAGE">
-                <div class="caption">
-                    <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
-                    <h4>@Html.DisplayFor(modelItem => item.Tagline)</h4>
-                    <p>by: @Html.DisplayFor(modelItem => item.Author)</p>
-                    <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-4 reviewBox">
+                <div class="thumbnail reviewThumb">
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                        <h4>@Html.DisplayFor(modelItem => item.Tagline)</h4>
+                        <p>Author: @Html.DisplayFor(modelItem => item.Author)</p>
+                        <p>Category: @Html.DisplayFor(modelItem => item.Category.CategoryName)</p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>

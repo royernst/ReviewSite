@@ -133,6 +133,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710271648133_InitialCreate.cs" />
+    <Compile Include="Migrations\201710271648133_InitialCreate.Designer.cs">
+      <DependentUpon>201710271648133_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710291604466_Altered character parameters on user input for review creation.cs" />
+    <Compile Include="Migrations\201710291604466_Altered character parameters on user input for review creation.Designer.cs">
+      <DependentUpon>201710291604466_Altered character parameters on user input for review creation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\ReviewSiteContext.cs" />
@@ -143,6 +152,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\technology.jpg" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -248,6 +258,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710271648133_InitialCreate.resx">
+      <DependentUpon>201710271648133_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710291604466_Altered character parameters on user input for review creation.resx">
+      <DependentUpon>201710291604466_Altered character parameters on user input for review creation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

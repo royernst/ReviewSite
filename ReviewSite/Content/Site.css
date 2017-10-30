@@ -23,6 +23,8 @@ textarea {
     max-width: 280px;
 }
 
+/* Shared View */
+/* Layout */
 /* Navbar */
 .navbar {
     background-color: black;
@@ -32,3 +34,63 @@ textarea {
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+/* Home View*/
+/* Index */
+
+/* Container Fluid div */
+.homeIndexCF {
+    background-image: url('images/technology.jpg');
+    background-size: cover;
+    border-radius: 0px;
+    width: 100%;
+}
+
+/* Jumbotron*/
+.homeIndexJumbotron {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    width: 75%;
+    margin: auto;
+    padding-top: 75px;
+    border-radius: 0px;
+}
+
+/* Description */
+.homeIndexDescriptionBackground {
+    padding: 0px;
+    width: 100%;
+}
+.homeIndexDescription {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    width: 100%;
+}
+
+/* Reviews View */
+
+/* Index */
+.reviewsIndexBackground {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Column div to force full height if tag field is missing */
+.reviewThumb {
+    height: 237px;
+}
+
+
+.caption {
+    text-align: center;
+}
+
